@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #132;
+    height: 100vh;
+    position: relative;
+}
+.sentence {
+    padding: 1vmin;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: fit-content;
+    background: rgb(17, 17, 17);
+    position: absolute;
+    top: 50px;
+    display: grid;
+    grid-template-columns:repeat(var(--num-of-letter),6vmin);
+    gap: 10px;
+    box-shadow: 0 0 10px black ;
+}
+.letter {
+    background-color: whitesmoke;
+    height: 6vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3vmin;
+}
+.hangman {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    background-image: url("img/hang.png");
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+}
+.head {
+    display: none;
+    position: absolute;
+    top: 79px;
+    right: 87px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid black;
+    border-radius: 50%;
+
+}
+.body
+{
+ 
+    position: relative;
+    top: 138px;
+    left: 235px;
+    width: 100px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+}
+.left-arm {
+    display: none;
+    position: absolute;
+    top: -3px;
+    left: 30px;
+    width: 6px;
+    height: 55px;
+    background-color: black;
+    transform: rotateZ(30deg);
+}
+.right-arm {
+    display: none;
+    position: absolute;
+    top: -3px;
+    right: 30px;
+    width: 6px;
+    height: 55px;
+    background-color: black;
+    transform: rotateZ(-30deg);
+}
+.b {
+    display: none;
+    position: absolute;
+    width: 6px;
+    height: 85px;
+    background-color: black;
+}
+.legs
+{
+    position: relative;
+    top: 137px;
+    left: 235px;
+    width: 100px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+}
+.left-leg{
+    display: none;
+    position: absolute;
+    top: -5px;
+    left: 33px;
+    width: 6px;
+    height: 40px;
+    background-color: black;
+    transform: rotateZ(39deg);    
+}
+.right-leg{
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: 33px;
+    width: 6px;
+    height: 40px;
+    background-color: black;
+    transform: rotateZ(-39deg);    
+}
